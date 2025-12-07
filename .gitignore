@@ -1,0 +1,62 @@
+# --- 1. Python (File biên dịch & file tạm) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- 2. Virtual Environment (Môi trường ảo - QUAN TRỌNG) ---
+# Tuyệt đối không push cái này lên, người khác sẽ tự cài bằng requirements.txt
+venv/
+.venv/
+env/
+ENV/
+bin/
+
+# --- 3. VS Code (Cấu hình riêng của máy bạn) ---
+.vscode/
+*.code-workspace
+
+# --- 4. Jupyter Notebook (File checkpoint rác) ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- 5. Streamlit ---
+# Không push file chứa mật khẩu/secrets
+.streamlit/secrets.toml
+
+# --- 6. Dữ liệu & Models (Tùy chọn) ---
+
+# A. Nếu dữ liệu LỚN (>100MB) -> Bỏ comment dòng dưới để không push
+# data/*.csv
+# data/raw/*
+# data/processed/*
+
+# B. File nén tạm thời (như file zip tải từ Colab về)
+*.zip
+*.tar.gz
+
+# C. Models (File .pkl)
+# - Nếu file model nhỏ (<100MB) và bạn muốn thầy cô clone về chạy ngay -> Giữ nguyên (đừng ignore).
+# - Nếu file model quá nặng -> Bỏ comment dòng dưới để ignore nó.
+# models/*.pkl
+# models/*.joblib
+
+# --- 7. File hệ thống (Mac/Windows) ---
+.DS_Store
+Thumbs.db
