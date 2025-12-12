@@ -211,9 +211,9 @@ if resources:
             # Card hiển thị Stress
             st.markdown(f"""
             <div class="metric-card" style="border-left: 5px solid {stress_color[stress_pred]}">
-                <h3>Mức độ Stress</h3>
+                <h3 style="color: {stress_color[stress_pred]}">Mức độ Stress</h3>
                 <h1 style="color: {stress_color[stress_pred]}">{stress_map[stress_pred]}</h1>
-                <p>Dự báo bởi: {model_name}</p>
+                <p style="color: {stress_color[stress_pred]}">Dự báo bởi: {model_name}</p>
             </div>
             """, unsafe_allow_html=True)
             
