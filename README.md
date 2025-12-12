@@ -12,6 +12,7 @@
 # 3. Cài đặt các thư viện cần thiết
 
 - pip install -r requirements.txt
+- pip install plotly
 
 # 4. Chạy ứng dụng
 
